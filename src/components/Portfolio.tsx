@@ -6,15 +6,15 @@ function Portfolio() {
   return (
     <div>
       <div className='flex flex-col md:flex-row items-center justify-center'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-
-          {portfolio.map((project: { title: any; imgUrl: any; stack: any; link: any }) => (
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          {portfolio.map((project: { title: string; imgUrl: string; stack: any; repo: string; live: string;}) => (
             <PortfolioItem
               key={project.title}
               title={project.title}
-              imgUrl={project.imgUrl}
+              imgUrl={project.imgUrl ?? null}
               stack={project.stack}
-              link={project.link}
+              repo={project.repo}
+              live={project.live ?? null}
             />
           ))}
         </div>
