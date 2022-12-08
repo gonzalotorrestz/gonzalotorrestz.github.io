@@ -1,20 +1,14 @@
 export default [
   {
-    title: 'My Portfolio',
-    imgUrl: 'assets/dummy-image-grey.jpg',
+    title: 'This Portfolio',
     stack: ['ReactJs', 'TailwindCSS', 'Vite'],
-    link: "https://github.com"
+    repo: "https://github.com/gonzalotorrestz/gonzalotorrestz.github.io",
   },
   {
-    title: 'Dummy Project 2',
-    imgUrl: 'assets/dummy-image-grey.jpg',
-    stack: ['React', 'NodeJs'],
-    link: "https://github.com"
-  },
-  {
-    title: 'Dummy Project 3',
-    imgUrl: 'assets/dummy-image-grey.jpg',
-    stack: ['React', ''],
-    link: "https://github.com"
-  },
+    title: 'Randy-Poké - Random Pokémon App',
+    imgUrl: 'assets/randy-poke-cover.jpg',
+    stack: ['NodeJs+Express', 'MongoDB', 'Vite', 'ReactJs', 'TailwindCSS'],
+    repo: "https://github.com/gonzalotorrestz/randy-poke",
+    live: "https://randy-poke-front.onrender.com/"
+  }
 ];
