@@ -1,12 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-function PortfolioItem({ title, imgUrl, stack, repo, live }: { title: string, imgUrl: string, stack: any, link: string, repo: string, live: string }) {
+function PortfolioItem({ title, imgUrl, stack, repo, live }: { title: string, imgUrl: string, stack: any, repo: string, live: string }) {
   return (
     <div className='border-2 border-stone-900 dark:border-stone-300 rounded-md overflow-hidden'>
       <a href={live} target="_blank" >
         {
-          imgUrl !== null ?
+          imgUrl !== '' ?
             (<img
               src={imgUrl}
               alt="Project screenshot "
@@ -22,7 +22,7 @@ function PortfolioItem({ title, imgUrl, stack, repo, live }: { title: string, im
         <div className='flex flex-wrap mb-4'>
           <a href={repo} target="_blank"><p className='font-semibold border-2 rounded-md px-2 mr-3 hover:bg-stone-900 hover:text-stone-300 dark:hover:bg-stone-300 dark:hover:text-stone-900'>View Code</p></a>
           {
-            live !== null ?
+            live !== '' ?
               (
                 <a href={live} target="_blank">
                   <p className='font-semibold border-2 rounded-md px-2 hover:bg-stone-900 hover:text-stone-300 dark:hover:bg-stone-300 dark:hover:text-stone-900'>Live Demo</p>
