@@ -11,10 +11,10 @@ function Portfolio() {
             <PortfolioItem
               key={project.title}
               title={project.title}
-              imgUrl={project.imgUrl ?? null}
+              imgUrl={project.imgUrl}
               stack={project.stack}
               repo={project.repo}
-              live={project.live ?? null}
+              live={project.live}
             />
           ))}
         </div>

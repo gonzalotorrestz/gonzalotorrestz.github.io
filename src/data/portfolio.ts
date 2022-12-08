@@ -1,8 +1,10 @@
 export default [
   {
     title: 'This Portfolio',
+    imgUrl: '',
     stack: ['ReactJs', 'TailwindCSS', 'Vite'],
     repo: "https://github.com/gonzalotorrestz/gonzalotorrestz.github.io",
+    live: ""
   },
   {
     title: 'Randy-Poké - Random Pokémon App',

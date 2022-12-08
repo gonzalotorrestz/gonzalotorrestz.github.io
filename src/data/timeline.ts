@@ -14,7 +14,7 @@ export default [
       ],
     tasks:
       [
-        ""],
+        " "],
   },
   {
     id: '001',
